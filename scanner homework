@@ -1,0 +1,47 @@
+/* Kicik bir proqram yazin, istifadeciden adini ve aldigi bali alsin, ve aldigi bala gore ona hansi qiymeti aldigini cap etsin.
+100-91 bal arasi - A qiymeti
+90-81 bal arasi - B qiymeti
+80-71 bal arasi - C qiymeti
+70-61 bal arasi - D qiymeti
+60-51 bal arasi - E qiymeti
+50-0 bal arasi - F qiymeti
+
+Numune: Ad: Nurlan, Bal 92 -> "Hormetli Nurlan, sizin qiymetiniz: A"
+*/
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner scanner=new Scanner(System.in);
+        System.out.println("Adinizi daxil edin");
+        String ad=scanner.nextLine();
+        System.out.println("Balinizi daxil edin");
+        int bal= scanner.nextInt();
+
+     if(bal>90 && bal<=100){
+         System.out.println("Hormetli"+" "+ ad + ","+ " " +"Sizin qiymetiniz: A ");
+     }
+     if(bal>80 && bal<=90){
+            System.out.println("Hormetli"+" "+ ad +","+" "  +"Sizin qiymetiniz: B ");
+        }
+        if(bal>70 && bal<=80){
+            System.out.println("Hormetli"+"  "+ ad+","+" " +"Sizin qiymetiniz: C ");
+        }
+        if(bal>60 && bal<=70){
+            System.out.println("Hormetli"+" "+ ad + ","+" " +"Sizin qiymetiniz: D ");
+        }
+        if(bal>50 && bal<=60){
+            System.out.println("Hormetli"+" "+ ad+ ","+ " " +"Sizin qiymetiniz: E ");
+        }
+        if(bal>=0 && bal<=50){
+            System.out.println("Hormetli"+" "+ ad+ ","+" " +"Sizin qiymetiniz: F ");
+        }
+
+    }
+
+}
+
